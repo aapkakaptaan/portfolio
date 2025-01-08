@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/a0f7613ea2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <h1>Hi, I'm Siddhant</h1>
+          <p>Full Stack Developer | CS Student</p>
+          <p>
+            Also, a proud
+            <a href="https://leetcode.com/u/__heysid__/" target="_blank"
+              >LeetCode warrior</a
+            >, battling bugs one submission at a time.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="WhatsApp Image 2025-01-08 at 21.23.18_c9b0f4d5.jpg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              I'm basically a code-loving puzzle addict who gets a kick out of
+              turning caffeine into solutions. When I'm not wrestling with
+              algorithms, I'm crafting websites and engineering software –
+              though sometimes I can't tell if I'm debugging code or the code is
+              debugging me. Always hungry for the next tech challenge, because
+              apparently regular hobbies weren't complicated enough for my
+              taste.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links" onclick="openTab('experience', event)">
+                Experience
+              </p>
+              <p class="tab-links" onclick="openTab('education', event)">
+                Education
+              </p>
+            </div>
+
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>Web Development Intern</span><br />Bharat Intern</li>
+                <li><span>Public Relations</span><br />TEDx KIIT</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2022-Present</span><br />Kalinga Institute Of Industrial
+                  Technology, Bhubaneswar, B-Tech in CSE
+                </li>
+                <li><span>2021</span><br />Class XII - Science, 89%</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="skills">
+      <div class="container">
+        <h1 class="sub-title">My Skills</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-chart-line"></i>
+            <h2>Data Structures & Algorithms</h2>
+            <p>Proficient in Java, C++.</p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-html5"></i>
+            <h2>Web Development</h2>
+            <p>HTML, CSS, JavaScript, React.</p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Python Programming</h2>
+            <p>Experienced in OOP and Machine Learning.</p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-brain"></i>
+            <h2>Data Science</h2>
+            <p>
+              Python, Machine Learning, Deep Learning, TensorFlow, PyTorch,
+              OpenCV, Statistics
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="project">
+      <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="download.png" />
+            <div class="layer">
+              <h3>Weather App</h3>
+              <p>A responsive weather app fetching live data using APIs.</p>
+              <a href="https://aapkakaptaan.github.io/weather_app/"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img
+              src="png-transparent-simon-area-game-simon-says-smile-smiley-circle-symbol-thumbnail.png"
+            />
+            <div class="layer">
+              <h3>Simon Game</h3>
+              <p>An Interactive and fun color matching Game.</p>
+              <a href="https://aapkakaptaan.github.io/simon_game/"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images.jpeg" />
+            <div class="layer">
+              <h3>Drawing App</h3>
+              <p>Interactive digital canvas built with React and JavaScript.</p>
+              <a href="https://aapkakaptaan.github.io/drawing_app/"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="real-ai.jpg" />
+            <div class="layer">
+              <h3>Text to Speech Converter</h3>
+              <p>
+                It converts everything to speech whatever you write. It's such
+                an amazing project, literally converts into speech whatever you
+                speak!!!!
+              </p>
+              <a href="https://aapkakaptaan.github.io/text-to-Speech/"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <button class="btn" id="see-more-btn">See More</button>
+      </div>
+    </div>
+    <div id="contact">
+      <div class="container">
+        <h1 class="sub-title">Contact Me</h1>
+        <div class="social-icons">
+          <a
+            href="https://www.linkedin.com/in/siddhant-rai-b7b865217/"
+            target="_blank"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/aapkakaptaan" target="_blank">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+        <a href="SIDDHANT_Resume.pdf" class="btn btn2" download>Download CV</a>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 Siddhant Rai | All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
